@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Badis</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+     <div class="topmessage">this is for you  ❤️</div>
+    <div class="envelope" onclick="showMessage()">
+        <div class="letter">📨</div>
+    </div>
+    <div class="message-container">
+        <div class="message">
+            <span id="typed-text"></span>
+        </div>
+        <div class="slideshow-container">
+                <div class="slide fade" style="display:block;">
+                    <img src="assets/aa.jpeg" class="slide-image" alt="Memory 1">
+                </div>
+        </div>               
+        <div class="question">
+            <p>Will you be my Valentine ? 💖</p>
+            <button onclick="showResponse('yes')">Yes</button>
+            <button id="noBtn" onclick="showResponse('no')">No</button>
+        </div>
+        <div class="response"></div>
+    </div>
+    <div class="heart-container"></div>
+
+    <div class="proposal-popup" id="proposalPopup">
+        <div class="proposal-content">
+            💖 You just made me the happiest person alive 💖  
+            <br><br>
+            I love you forever 💍✨
+            <br><br>
+            <button onclick="closeProposal()">Close</button>
+        </div>
+    </div>
+           <div id="secretMessage" style="display:none; font-size:22px; color:#ff4d6d;">
+            You are the best thing that ever happened to me 💖
+        </div>
+    <script src="script.js"></script>
+<audio id="bgMusic" loop>
+    <source src="assets/love.mp3" type="audio/mpeg">
+</audio>
+</body>
+</html>
